@@ -15,16 +15,16 @@ This Python application allows users to select different Pokémon from a list of
 ## 🔧 Installation
 
 # Clone the Repository
-git clone https://github.com/EveeSilvaa/pokedex-python.git
+```git clone https://github.com/EveeSilvaa/pokedex-python.git```
 
 # Navigate to the Project Directory
-cd pokedex-python
+```cd pokedex-python```
 
 # Install Dependencies
-pip install pillow
+```pip install pillow```
 
 # Run the Application
-python pokedex.py
+```python pokedex.py```
 
 ## 🎨 Picture:
 
