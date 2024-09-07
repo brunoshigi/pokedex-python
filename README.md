@@ -2,6 +2,8 @@
 
 Bem-vindo ao projeto **Pokedex-Python**! 🐱‍👤 Este projeto é um visualizador de Pokémon divertido e interativo construído com Python e Tkinter. É uma ótima maneira de explorar e aprender mais sobre seus Pokémon favoritos enquanto pratica programação em Python! 🌟
 
+- [English Version](README-ENGLISH.md)
+
 ## 📋 Visão Geral do Projeto
 
 Este aplicativo Python permite que os usuários selecionem diferentes Pokémon a partir de uma lista de botões e visualizem informações detalhadas sobre cada um. As informações incluem o nome do Pokémon, tipo, ID, status, habilidades e uma imagem.
