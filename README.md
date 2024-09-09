@@ -1,69 +1,72 @@
 # Pokedex-Python 🐾
 
-Welcome to the **Pokedex-Python** project! 🐱‍👤 This project is a fun and interactive Pokémon viewer built using Python and Tkinter. It’s a great way to explore and learn more about your favorite Pokémon while practicing Python programming! 🌟
+Bem-vindo ao projeto **Pokedex-Python**! 🐱‍👤 Este projeto é um visualizador de Pokémon divertido e interativo construído com Python e Tkinter. É uma ótima maneira de explorar e aprender mais sobre seus Pokémon favoritos enquanto pratica programação em Python! 🌟
 
-## 📋 Project Overview
+## 🌐 Languages
 
-This Python application allows users to select different Pokémon from a list of buttons and view detailed information about each one. The information includes the Pokémon's name, type, ID, status, abilities, and an image.
+- [English Version](README-ENGLISH.md)
+- [Versão em Português](README.md)
 
-## 🚀 Features
+## 📋 Visão Geral do Projeto
 
-- **Interactive Pokémon Viewer:** Select a Pokémon to display its details and image.
-- **Dynamic Updates:** Pokémon information and images update based on user selection.
-- **Styled Interface:** A visually appealing GUI with custom colors and images.
+Este aplicativo Python permite que os usuários selecionem diferentes Pokémon a partir de uma lista de botões e visualizem informações detalhadas sobre cada um. As informações incluem o nome do Pokémon, tipo, ID, status, habilidades e uma imagem.
 
-## 🔧 Installation
+## 🚀 Funcionalidades
 
-# Clone the Repository
-git clone https://github.com/EveeSilvaa/pokedex-python.git
+- **Visualizador de Pokémon Interativo:** Selecione um Pokémon para exibir seus detalhes e imagem.
+- **Atualizações Dinâmicas:** Informações e imagens dos Pokémon são atualizadas com base na seleção do usuário.
+- **Interface Estilizada:** Uma interface gráfica visualmente atraente com cores e imagens personalizadas.
 
-# Navigate to the Project Directory
-cd pokedex-python
+## 🔧 Instalação
 
-# Install Dependencies
-pip install pillow
+# Clone o Repositório
+``git clone https://github.com/EveeSilvaa/pokedex-python.git``
 
-# Run the Application
-python pokedex.py
+# Navegue até o Diretório do Projeto
+``cd pokedex-python``
 
-## 🎨 Picture:
+# Instale as Dependências
+``pip install pillow``
 
-- **Initial View Eevee**
-  
-  ![Initial View](imagens/pikatcu-3D.png)
 
-## 🛠️ Usage
+## 🎨 Imagem:
 
-1. **Select a Pokémon:**
-   Click on any Pokémon button to view its details. The button names are displayed on the right side of the window.
+- **Visualização Inicial Pikachu**
 
-2. **View Information:**
-   The selected Pokémon’s name, type, ID, status (HP, Attack, Defense, Speed, and Total), and abilities will be displayed in the main area of the window.
+  ![Visualização Inicial](imagens/pikatcu-3D.png)
 
-3. **Image Display:**
-   The Pokémon’s image will be updated based on the selected Pokémon. Images are shown along with the Pokémon details.
+## 🛠️ Uso
 
-To switch between Pokémon, simply click the corresponding button, and the application will update the displayed information and image accordingly.
+1. **Selecione um Pokémon:**
+   Clique em qualquer botão de Pokémon para visualizar seus detalhes. Os nomes dos botões são exibidos no lado direito da janela.
 
-## 📚 Data Source
+2. **Visualize as Informações:**
+   O nome, tipo, ID, status (HP, Ataque, Defesa, Velocidade e Total) e habilidades do Pokémon selecionado serão exibidos na área principal da janela.
 
-The Pokémon data and images are sourced from:
+3. **Exibição da Imagem:**
+   A imagem do Pokémon será atualizada com base no Pokémon selecionado. As imagens são exibidas junto com os detalhes do Pokémon.
+
+Para alternar entre os Pokémon, basta clicar no botão correspondente, e o aplicativo atualizará as informações e a imagem exibidas de acordo.
+
+## 📚 Fonte de Dados
+
+Os dados e imagens dos Pokémon são obtidos de:
 - [Pokémon Database](https://pokemondb.net/)
 - [Pokémon Wiki](https://pokemon.fandom.com/wiki/Main_Page)
 
-## 📄 License
+## 📄 Licença
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 💬 Contributing
+## 💬 Contribuindo
 
-Feel free to open issues or submit pull requests if you have suggestions or improvements! Contributions are welcome to help enhance the Pokémon viewer or add new features.
+Sinta-se à vontade para abrir issues ou enviar pull requests se tiver sugestões ou melhorias! Contribuições são bem-vindas para ajudar a aprimorar o visualizador de Pokémon ou adicionar novas funcionalidades.
 
-## 🏷️ Badges
+## 🏷️ Distintivos
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
-## ✨ Happy Coding! 😊
+## ✨ Feliz Codificação! 😊
 
-Thank you for checking out the **Pokedex-Python** project! We hope you enjoy exploring the Pokémon world and find the application useful. If you have any feedback or questions, don't hesitate to reach out. Have fun coding and catching 'em all! 🌟
+Obrigado por conferir o projeto **Pokedex-Python**! Esperamos que você goste de explorar o mundo dos Pokémon e ache o aplicativo útil. Se tiver algum feedback ou perguntas, não hesite em entrar em contato. Divirta-se codificando e capturando todos! 🌟
