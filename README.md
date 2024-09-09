@@ -30,7 +30,7 @@ python pokedex.py
 
 - **Initial View Eevee**
   
-  ![Initial View](imagens/-eeveepreview.png)
+  ![Initial View](imagens/pikatcu-3D.png)
 
 ## 🛠️ Usage
 
