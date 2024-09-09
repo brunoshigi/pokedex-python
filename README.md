@@ -28,14 +28,12 @@ Este aplicativo Python permite que os usuários selecionem diferentes Pokémon a
 # Instale as Dependências
 ``pip install pillow``
 
-# Execute o Aplicativo
-``python pokedex.py``
 
 ## 🎨 Imagem:
 
-- **Visualização Inicial Eevee**
+- **Visualização Inicial Pikachu**
 
-  ![Visualização Inicial](imagens/-eeveepreview.png)
+  ![Visualização Inicial](imagens/pikatcu-3D.png)
 
 ## 🛠️ Uso
 
