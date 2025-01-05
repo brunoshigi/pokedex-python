@@ -46,4 +46,34 @@ pokemon = {
         "habilidades": ['Torrente', 'Revólver de água'],
         "tipo": ['#007', 'água', 'imagens/squirtle.img.png'],
     },
+
+    "Jigglypuff": {
+        "status": ['HP: 250', 'Ataque: 200', 'Defesa: 150', 'Velocidade: 100', 'Total: 700'],
+        "habilidades": ['Canção', 'Pancada'],
+        "tipo": ['#039', 'fada', 'imagens/jigglypuff.png'],
+    },
+
+    "Snorlax": {
+        "status": ['HP: 600', 'Ataque: 500', 'Defesa: 400', 'Velocidade: 100', 'Total: 1.600'],
+        "habilidades": ['Descanso', 'Investida'],
+        "tipo": ['#143', 'normal', 'imagens/snorlax.png'],
+    },
+
+    "Dragonite": {
+        "status": ['HP: 500', 'Ataque: 600', 'Defesa: 500', 'Velocidade: 400', 'Total: 2.000'],
+        "habilidades": ['Furacão', 'Raio'],
+        "tipo": ['#149', 'dragão', 'imagens/dragonite.png'],
+    },
+
+    "Lucario": {
+        "status": ['HP: 400', 'Ataque: 500', 'Defesa: 400', 'Velocidade: 500', 'Total: 1.800'],
+        "habilidades": ['Esfera de Aura', 'Velocidade Extrema'],
+        "tipo": ['#448', 'lutador', 'imagens/lucario.png'],
+    },
+
+    "Gyarados": {
+        "status": ['HP: 500', 'Ataque: 600', 'Defesa: 500', 'Velocidade: 400', 'Total: 2.000'],
+        "habilidades": ['Hidro Bomba', 'Mordida'],
+        "tipo": ['#130', 'água', 'imagens/gyarados.png'],
+    },
 }
