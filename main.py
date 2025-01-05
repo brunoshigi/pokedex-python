@@ -1,7 +1,8 @@
 from tkinter import *
-from tkinter import ttk
 from PIL import Image, ImageTk
 from dados import pokemon  # Importa o dicionário "pokemon" do arquivo dados.py
+import ttkbootstrap as ttk
+from ttkbootstrap.constants import *
 
 ############## cores ################
 co0 = "#444466"  # preto-azulado
@@ -11,6 +12,7 @@ co3 = "#38576b"  # valor
 co4 = "#403d3d"  # texto
 co5 = "#ef5350"  # vermelho
 co6 = "#d3d3d3"  # cinza claro
+co7 = "#ffcc00"  # amarelo (detalhes da Pokédex)
 
 # Dicionário de cores de fundo para cada Pokémon
 cores_fundo = {
@@ -30,16 +32,16 @@ cores_fundo = {
 }
 
 # Criando a janela principal (com tamanho menor)
-janela = Tk()
+janela = ttk.Window(themename="darkly")
 janela.title("Pokédex")
 janela.geometry("600x400")
 janela.configure(bg=co5)
 
 # ================== FRAME SUPERIOR (Título e Combobox) ==================
-frame_top = Frame(janela, bg=co5)
+frame_top = ttk.Frame(janela, bootstyle=PRIMARY)
 frame_top.pack(side=TOP, fill=X, pady=5)
 
-titulo = Label(frame_top, text="Pokédex", font=("Arial", 20, "bold"), bg=co5, fg=co1)
+titulo = ttk.Label(frame_top, text="Pokédex", font=("Arial", 20, "bold"), bootstyle=INVERSE)
 titulo.pack()
 
 # Combobox para escolher o Pokémon
@@ -51,57 +53,57 @@ combo.pack(pady=5)
 combo.set("Pikachu")  # valor inicial
 
 # ================== FRAME PRINCIPAL (onde mostra os detalhes) ==================
-frame_info = Frame(janela, bg=co1)
+frame_info = ttk.Frame(janela, bootstyle=SECONDARY, padding=10)
 frame_info.pack(fill=BOTH, expand=True, padx=10, pady=10)
 
 # Nome do Pokémon
-pok_nome = Label(frame_info, text="", font=("Fixedsys", 16), bg=co1, fg=co0)
+pok_nome = ttk.Label(frame_info, text="", font=("Fixedsys", 16), bootstyle=INVERSE)
 pok_nome.pack(pady=5)
 
 # Label para imagem
-pok_imagem = Label(frame_info, bg=co1)
+pok_imagem = ttk.Label(frame_info)
 pok_imagem.pack()
 
 # Tipo e ID
-pok_tipo = Label(frame_info, text="", font=("Ivy", 10, "bold"), bg=co1, fg=co0)
+pok_tipo = ttk.Label(frame_info, text="", font=("Ivy", 10, "bold"), bootstyle=INVERSE)
 pok_tipo.pack(pady=2)
 
-pok_id = Label(frame_info, text="", font=("Ivy", 10, "bold"), bg=co1, fg=co0)
+pok_id = ttk.Label(frame_info, text="", font=("Ivy", 10, "bold"), bootstyle=INVERSE)
 pok_id.pack(pady=2)
 
 # ========== Frame de "Status" ==========
-frame_status = Frame(frame_info, bg=co6)
+frame_status = ttk.Frame(frame_info, bootstyle=LIGHT, padding=10)
 frame_status.pack(pady=5, fill=X)
 
-lbl_status_titulo = Label(frame_status, text="Status", font=("Verdana", 12, "bold"), bg=co6, fg=co0)
+lbl_status_titulo = ttk.Label(frame_status, text="Status", font=("Verdana", 12, "bold"), bootstyle=INVERSE)
 lbl_status_titulo.pack(anchor=NW, padx=5, pady=5)
 
-pok_hp = Label(frame_status, text="", font=("Verdana", 9), bg=co6, fg=co4)
+pok_hp = ttk.Label(frame_status, text="", font=("Verdana", 9), bootstyle=INVERSE)
 pok_hp.pack(anchor=NW, padx=15)
 
-pok_atack = Label(frame_status, text="", font=("Verdana", 9), bg=co6, fg=co4)
+pok_atack = ttk.Label(frame_status, text="", font=("Verdana", 9), bootstyle=INVERSE)
 pok_atack.pack(anchor=NW, padx=15)
 
-pok_defesa = Label(frame_status, text="", font=("Verdana", 9), bg=co6, fg=co4)
+pok_defesa = ttk.Label(frame_status, text="", font=("Verdana", 9), bootstyle=INVERSE)
 pok_defesa.pack(anchor=NW, padx=15)
 
-pok_velocidade = Label(frame_status, text="", font=("Verdana", 9), bg=co6, fg=co4)
+pok_velocidade = ttk.Label(frame_status, text="", font=("Verdana", 9), bootstyle=INVERSE)
 pok_velocidade.pack(anchor=NW, padx=15)
 
-pok_total = Label(frame_status, text="", font=("Verdana", 9), bg=co6, fg=co4)
+pok_total = ttk.Label(frame_status, text="", font=("Verdana", 9), bootstyle=INVERSE)
 pok_total.pack(anchor=NW, padx=15)
 
 # ========== Frame de "Habilidades" ==========
-frame_hab = Frame(frame_info, bg=co6)
+frame_hab = ttk.Frame(frame_info, bootstyle=LIGHT, padding=10)
 frame_hab.pack(pady=5, fill=X)
 
-lbl_hab_titulo = Label(frame_hab, text="Habilidades", font=("Verdana", 12, "bold"), bg=co6, fg=co0)
+lbl_hab_titulo = ttk.Label(frame_hab, text="Habilidades", font=("Verdana", 12, "bold"), bootstyle=INVERSE)
 lbl_hab_titulo.pack(anchor=NW, padx=5, pady=5)
 
-pok_hb_1 = Label(frame_hab, text="", font=("Verdana", 9), bg=co6, fg=co4)
+pok_hb_1 = ttk.Label(frame_hab, text="", font=("Verdana", 9), bootstyle=INVERSE)
 pok_hb_1.pack(anchor=NW, padx=15)
 
-pok_hb_2 = Label(frame_hab, text="", font=("Verdana", 9), bg=co6, fg=co4)
+pok_hb_2 = ttk.Label(frame_hab, text="", font=("Verdana", 9), bootstyle=INVERSE)
 pok_hb_2.pack(anchor=NW, padx=15)
 
 # ================== FUNÇÃO PARA TROCAR O POKÉMON ==================
@@ -134,11 +136,22 @@ def trocar_pokemon(nome):
 
     # Mudar a cor de fundo do "frame_info" para a cor do Pokémon
     cor_fundo = cores_fundo.get(nome, co1)
-    frame_info.config(bg=cor_fundo)
-    pok_nome.config(bg=cor_fundo)
-    pok_imagem.config(bg=cor_fundo)
-    pok_tipo.config(bg=cor_fundo)
-    pok_id.config(bg=cor_fundo)
+    frame_info.config(bootstyle=cor_fundo)
+    pok_nome.config(bootstyle=cor_fundo)
+    pok_imagem.config(bootstyle=cor_fundo)
+    pok_tipo.config(bootstyle=cor_fundo)
+    pok_id.config(bootstyle=cor_fundo)
+    frame_status.config(bootstyle=cor_fundo)
+    lbl_status_titulo.config(bootstyle=cor_fundo)
+    pok_hp.config(bootstyle=cor_fundo)
+    pok_atack.config(bootstyle=cor_fundo)
+    pok_defesa.config(bootstyle=cor_fundo)
+    pok_velocidade.config(bootstyle=cor_fundo)
+    pok_total.config(bootstyle=cor_fundo)
+    frame_hab.config(bootstyle=cor_fundo)
+    lbl_hab_titulo.config(bootstyle=cor_fundo)
+    pok_hb_1.config(bootstyle=cor_fundo)
+    pok_hb_2.config(bootstyle=cor_fundo)
 
 # Quando o usuário seleciona um Pokémon no Combobox
 def on_select(event):
